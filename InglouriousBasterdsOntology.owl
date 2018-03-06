@@ -1,0 +1,1732 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/emily/ontologies/2018/2/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/emily/ontologies/2018/2/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/emily/ontologies/2018/2/basterd">
+        <rdfs:comment>The Inglourious Basterds ontology that describes the various characters in the film.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#actor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#actor"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#fate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#fate"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#reference -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#reference"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/has_title -->
+
+    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/is_aligned_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/is_character_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/is_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Actress -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Actress">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A woman whose profession is acting on the stage, in movies, or on television.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Adolf_Hitler -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Adolf_Hitler">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Führer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Reich_Chancellor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Austria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Martin Wuttke</rdfs:actor>
+        <rdfs:fate>Killed by Donny Donowitz and Omar Ulmer.</rdfs:fate>
+        <rdfs:isDefinedBy>Adolf Hitler was dictator of Germany during WWII.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Adolf_Hitler</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Aldo_Raine -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Aldo_Raine">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/First_Lieutenant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Brad Pitt</rdfs:actor>
+        <rdfs:fate>Most likely survived WWII</rdfs:fate>
+        <rdfs:isDefinedBy>A hillbilly-moonshiner from Tennessee, nicknamed &quot;The Apache&quot;, Raine was leader of the Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Aldo_Raine</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Allegiance -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Allegiance">
+        <rdfs:isDefinedBy>Character&apos;s loyalty towards a group</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Allied_Powers -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allegiance"/>
+        <rdfs:isDefinedBy>Group containing Great Britain, United States, China, and the Soviet Union during WWII that together opposed the Axis Powers</rdfs:isDefinedBy>
+        <rdfs:reference>https://en.wikipedia.org/wiki/Allies_of_World_War_II</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/America -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/America">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+        <rdfs:isDefinedBy>A country consisting of 50 states located in North America.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Amos_Dreyfus -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Amos_Dreyfus">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Jasper Linnewedel</rdfs:actor>
+        <rdfs:fate>Executed by Landa&apos;s men.</rdfs:fate>
+        <rdfs:isDefinedBy>Amos Dreyfus was the son of Jakob and Marium Dreyfus, brother of Shosanna.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Amos_Dreyfus</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Andy_Kagan -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Andy_Kagan">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Private_First_Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Paul Rust</rdfs:actor>
+        <rdfs:fate>Unknown.</rdfs:fate>
+        <rdfs:isDefinedBy>Andy Kagan was a Jewish-American soldier and member of the Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Andy_Kagan</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Archie_Hicox -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Archie_Hicox">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Lieutenant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Great_Britain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Michael Fassbender</rdfs:actor>
+        <rdfs:fate>Died in the La Louisiane tavern.</rdfs:fate>
+        <rdfs:isDefinedBy>British Army officer who joined up with the Basterds during Operation Kino.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Archie_Hicox</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Austria -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Austria">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+        <rdfs:isDefinedBy>A German-speaking country in Central Europe.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Bartender -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Bartender">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A person who mixes and serves drinks at a bar.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Bob_Dreyfus -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Bob_Dreyfus">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Salvadore Brandt</rdfs:actor>
+        <rdfs:fate>Executed by Landa&apos;s men.</rdfs:fate>
+        <rdfs:isDefinedBy>Bob Dreyfus was the brother of Miriam Dreyfus and uncle of Shosanna.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Bob_Dreyfus</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Bridget_von_Hammersmark -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Bridget_von_Hammersmark">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Actress"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Diane Kruger</rdfs:actor>
+        <rdfs:fate>Killed by Landa.</rdfs:fate>
+        <rdfs:isDefinedBy>Bridget von Hammersmark was a popular film star in Nazi Germany and a spy for the Allies.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Bridget_von_Hammersmark</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Butz -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Butz">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Private"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Sönke Möhring</rdfs:actor>
+        <rdfs:fate>Most likely survived WWII.</rdfs:fate>
+        <rdfs:isDefinedBy>Private Butz is the only survivor of The Basterds&apos;s assault on Sergeant Werner Rachtman&apos;s post in some unknown rural woods.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Butz</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Character_Type -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Character_Type"/>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Characters -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Characters">
+        <owl:disjointWith rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Charlotte_LaPadite -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Charlotte_LaPadite">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Farmer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Léa Seydoux</rdfs:actor>
+        <rdfs:fate>Most likely survived WWII.</rdfs:fate>
+        <rdfs:isDefinedBy>Charlotte LaPadite was the daughter of Perrier LaPadite and the sister of Julie and Suzanne.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Charlotte_LaPadite</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Colonel -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Colonel">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>An army officer of high rank.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Commander -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Commander">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A person in authority, especially over a body of troops or a military operation.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Corporal -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Corporal">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A low-ranking noncommissioned officer in the armed forces.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Dieter_Hellstrom -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Dieter_Hellstrom">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>August Diehl</rdfs:actor>
+        <rdfs:fate>Killed by Archie Hicox and Hugo Stiglitz.</rdfs:fate>
+        <rdfs:isDefinedBy>Dieter Hellstrom was a Gestapo Major, who was stationed in France.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Dieter_Hellstrom</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Donny_Donowitz -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Donny_Donowitz">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Staff_Sergeant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Eli Roth</rdfs:actor>
+        <rdfs:fate>Died in the cinema.</rdfs:fate>
+        <rdfs:isDefinedBy>Donny &quot;The Bear Jew&quot; Donowitz is a member of The Basterds. He was nicknamed The Bear Jew for his notoriety of using baseball bats to smash the heads of the commanders in The Basterds&apos; numerous assaults on the Army around Nazi-occupied France.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Donny_Donowitz</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Ed_Fenech -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Ed_Fenech">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Commander"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Great_Britain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Mike Myers</rdfs:actor>
+        <rdfs:fate>Most likely survived WWII.</rdfs:fate>
+        <rdfs:isDefinedBy>General Ed Fenech provides a plot to kill Nazi leadership.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Ed_Fenech</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Eric -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Eric">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Bartender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Christian Berkel</rdfs:actor>
+        <rdfs:fate>Died in the La Louisiane tavern.</rdfs:fate>
+        <rdfs:isDefinedBy>Eric was the owner of the La Louisiane tavern.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Eric</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Farmer -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Farmer">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A person who owns or manages a farm.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/First_Lieutenant -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/First_Lieutenant">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A commissioned officer in the US Army, Air Force, or Marine Corps ranking above second lieutenant and below captain.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/France -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/France">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+        <rdfs:isDefinedBy>A French-speaking country in Western Europe.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Francesca_Mondino -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Francesca_Mondino">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Translator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Julie Dreyfus</rdfs:actor>
+        <rdfs:fate>Killed in the cinema by Omar Ulmer.</rdfs:fate>
+        <rdfs:isDefinedBy>Francesca Mondino is the French interpreteur of Joseph Goebbels.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Francesca_Mondino</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Frederick_Zoller -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Frederick_Zoller">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Private"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Daniel Brühl</rdfs:actor>
+        <rdfs:fate>Killed by Shosanna Dreyfus.</rdfs:fate>
+        <rdfs:isDefinedBy>Fredrick Zoller is a Wehrmacht marksman who became a war hero. He became a war hero after he killed at least 250 enemies in three days. Because of his exploits, Joseph Goebbels decided to turn his exploits into a propaganda film, called Nation&apos;s Pride, in which Zoller stars as himself.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Fredrick_Zoller</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Führer -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Führer">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A ruthless, tyrannical leader.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Germany -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Germany">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+        <rdfs:isDefinedBy>A German-speaking country in Western Europe.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Gerold_Hirschberg -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Gerold_Hirschberg">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Private_First_Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Samm Levine</rdfs:actor>
+        <rdfs:fate>Unknown.</rdfs:fate>
+        <rdfs:isDefinedBy>Gerold Hirschberg was a Jewish-American soldier and member of the Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Gerold_Hirschberg</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Great_Britain -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Great_Britain">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+        <rdfs:isDefinedBy>Great Britain, also known as Britain, is a large island in the north Atlantic Ocean off the northwest coast of continental Europe.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Hans_Landa -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Hans_Landa">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Austria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Colonel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Christoph Waltz</rdfs:actor>
+        <rdfs:fate>Arrested.</rdfs:fate>
+        <rdfs:isDefinedBy>Hans Landa is the main antagonist and is nicknamed The Jew Hunter due to his involvement in hunting down Jews in France.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Hans_Landa</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Herman_Göring -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Herman_Göring">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:fate>Died in the cinema.</rdfs:fate>
+        <rdfs:isDefinedBy>Hermann Göring was the commander of the Luftwaffe in Nazi Germany. He was known to be one of the higher ranking Nazis. He attended the premiere of Stolz der Nation at La Gamaar Cinema.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Hermann_G%C3%B6ring</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Hugo_Stiglitz -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Hugo_Stiglitz">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Sergeant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Til Schweiger</rdfs:actor>
+        <rdfs:fate>Killed by Eric in the La Louisiane tavern.</rdfs:fate>
+        <rdfs:isDefinedBy>Hugo Stiglitz was a German soldier, well known for killing at least 13 Gestapo officers. He, Aldo Raine and Archie Hicox were the only non-Jewish members of The Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Hugo_Stiglitz</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Jakob_Dreyfus -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Jakob_Dreyfus">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Patrick Elias</rdfs:actor>
+        <rdfs:fate>Executed by Landa&apos;s men.</rdfs:fate>
+        <rdfs:isDefinedBy>Jakob Dreyfus was the husband of Miriam and father of Shosanna.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Jakob_Dreyfus</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Joseph_Goebbels -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Joseph_Goebbels">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Minister_Of_Propoganda"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Sylvester Groth</rdfs:actor>
+        <rdfs:fate>Killed by Donny Donowitz and Omar Ulmer.</rdfs:fate>
+        <rdfs:isDefinedBy>Joseph Goebbels is the Propaganda Minister of Nazi Germany, and Hitler&apos;s number two man.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Joseph_Goebbels</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Julie_LaPadite -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Julie_LaPadite">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Tina Rodriguez</rdfs:actor>
+        <rdfs:fate>Most likely survived WWII.</rdfs:fate>
+        <rdfs:isDefinedBy>Julie LaPadite was LaPadite was the daughter of Perrier LaPadite and the sister of Charlotte and Suzanne.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Julie_LaPadite</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Lieutenant -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Lieutenant">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A deputy or substitute acting for a superior.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Main -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Main">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Character_Type"/>
+        <owl:disjointWith rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Major -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Major">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>An army officer of high rank.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Marcel -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Marcel">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Jacky Ido</rdfs:actor>
+        <rdfs:fate>Unknown.</rdfs:fate>
+        <rdfs:isDefinedBy>Marcel is Shosanna&apos;s assistant and lover at the cinema.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Marcel</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Martin_Bormann -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Martin_Bormann">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:fate>Died in the cinema.</rdfs:fate>
+        <rdfs:isDefinedBy>Martin Bormann was a prominent Nazi official. He became head of the Party Chancellery (Parteikanzlei) and private secretary to Adolf Hitler.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Martin_Bormann</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Master_Sergeant -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Master_Sergeant">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A noncommissioned officer in the US armed forces of high rank.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Mathilda -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Mathilda">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Bartender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Anne-Sophie Franck</rdfs:actor>
+        <rdfs:fate>Died at the La Louisiane tavern.</rdfs:fate>
+        <rdfs:isDefinedBy>Mathila worked at the La Louisiane tavern.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Mathilda</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Michael_Zimmerman -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Michael_Zimmerman">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Private_First_Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Michael Bacall</rdfs:actor>
+        <rdfs:fate>Unknown.</rdfs:fate>
+        <rdfs:isDefinedBy>Michael Zimmerman was a Jewish-American soldier and member of the Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Michael_Zimmerman</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Minister_Of_Propoganda -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Minister_Of_Propoganda">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A person who is in charge of making and distributing propoganda.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Miriam_Dreyfus -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Miriam_Dreyfus">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Eva Löbau</rdfs:actor>
+        <rdfs:fate>Executed by Landa&apos;s men.</rdfs:fate>
+        <rdfs:isDefinedBy>Miriam Dreyfus was the wife of Jakob Dreyfus and the mother of Shosanna.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Miriam_Dreyfus</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Nationality -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Omar_Ulmer -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Omar_Ulmer">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Private_First_Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Omar Doom</rdfs:actor>
+        <rdfs:fate>Died in the cinema.</rdfs:fate>
+        <rdfs:reference>Omar Ulmer was a Jewish-American soldier and a member of the Basterds.</rdfs:reference>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Omar_Ulmer</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Perrier_LaPadite -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Perrier_LaPadite">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Farmer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Denis Ménochet</rdfs:actor>
+        <rdfs:fate>Most likely survived WWII.</rdfs:fate>
+        <rdfs:isDefinedBy>Perrier LaPadite was a French farmer that hid the Dreyfuses from the Nazis.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Perrier_LaPadite</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Prime_Minister -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Prime_Minister">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>The Prime Minister is the head of the government.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Private -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Private">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A soldier of the lowest rank.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Private_First_Class -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Private_First_Class">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>An enlisted person in the armed forces, in particular (in the US Army) an enlisted person ranking above private and below corporal.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Reich_Chancellor -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Reich_Chancellor">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>The head of the government in Germany.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Secondary -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Secondary">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Character_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Sergeant -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Sergeant">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A noncommissioned officer in the armed forces ranking above corporal and below staff sergeant.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Shosanna_Dreyfus -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Shosanna_Dreyfus">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Main"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Mélanie Laurent</rdfs:actor>
+        <rdfs:fate>Killed by Frederick Zoller.</rdfs:fate>
+        <rdfs:isDefinedBy>Shosanna Dreyfus (alias Emmanuelle Mimieux) is one of the main protagonists of the film. She is the only member of her family that survives execution at the hands of Landa and later becomes owner of Le Gamaar Cinema.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Shosanna_Dreyfus</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Simon_Sakowitz -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Simon_Sakowitz">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Private_First_Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Carlos Fidel</rdfs:actor>
+        <rdfs:fate>Unknown.</rdfs:fate>
+        <rdfs:isDefinedBy>Simon Sakowitz was a Jewish-American soldier and member of the Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Simon_Sakowitz</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Smithson_Utivich -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Smithson_Utivich">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Private_First_Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>B.J. Novak</rdfs:actor>
+        <rdfs:fate>Most likely survived WWII.</rdfs:fate>
+        <rdfs:isDefinedBy>Smithson Utivich was a Jewish-American soldier and member of the Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Smithson_Utivich</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Staff_Sergeant -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Staff_Sergeant">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A noncommissioned officer in the US Army ranking above sergeant and below sergeant first class.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Suzanne_LaPadite -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Suzanne_LaPadite">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Lena Friedrich</rdfs:actor>
+        <rdfs:fate>Most likely survived WWII.</rdfs:fate>
+        <rdfs:isDefinedBy>Suzanne LaPadite was the daughter of Perrier LaPadite and the sister of Julie and Charlotte.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Suzanne_LaPadite</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/The_Basterds -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/The_Basterds">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allegiance"/>
+        <rdfs:isDefinedBy>The Basterds were a group of 11 (initially 9 soldiers), 8 Jewish and 3 non-Jewish, whose sole mission was to inflict terror in the Nazi occupied France</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/The_Basterds</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Third_Reich -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Third_Reich">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allegiance"/>
+        <rdfs:reference>Nazi Germany while under the dictatorship of Adolf Hitler.</rdfs:reference>
+        <rdfs:reference>https://en.wikipedia.org/wiki/Nazi_Germany</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Title -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Translator -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Translator">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        <rdfs:isDefinedBy>A person who translates from one language into another, especially as a profession.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Werner_Rachtman -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Werner_Rachtman">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Sergeant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Richard Sammel</rdfs:actor>
+        <rdfs:fate>Killed by Donny Donowitz.</rdfs:fate>
+        <rdfs:isDefinedBy>Sergeant Werner Rachtman is a Wehrmacht sergeant. His post in the woods is ambushed by The Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Werner_Rachtman</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Wilhelm -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Wilhelm">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Master_Sergeant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Third_Reich"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Alexander Fehling</rdfs:actor>
+        <rdfs:fate>Killed by Bridget von Hammersmark</rdfs:fate>
+        <rdfs:isDefinedBy>Wilhelm was a Sergeant in the Wehrmacht, who was celebrating along with 4 other soldiers, the birth of his son in the La Louisiane tavern.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Wilhelm</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Wilhelm_Wicki -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Wilhelm_Wicki">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/The_Basterds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Corporal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Austria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Gedeon Burkhard</rdfs:actor>
+        <rdfs:fate>Killed by Wilhelm.</rdfs:fate>
+        <rdfs:isDefinedBy>Wilhem Wicki was Jewish-Austrian who moved out of Europe before Hitler annexed Austria into the German Reich. He was enlisted in the US Armed Forces, where he joined the Basterds.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Wilhelm_Wicki</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- http://www.basterds.com/ontologies/basterds.owl/Winston_Churchill -->
+
+    <owl:Class rdf:about="http://www.basterds.com/ontologies/basterds.owl/Winston_Churchill">
+        <rdfs:subClassOf rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Prime_Minister"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Allied_Powers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Secondary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+                <owl:allValuesFrom rdf:resource="http://www.basterds.com/ontologies/basterds.owl/Great_Britain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:actor>Rod Taylor</rdfs:actor>
+        <rdfs:fate>Survived WWII</rdfs:fate>
+        <rdfs:isDefinedBy>Winston Churchill was the Prime Minister of the United Kingdom from 1940 to 1945 and again from 1951 to 1955.</rdfs:isDefinedBy>
+        <rdfs:reference>http://inglouriousbasterds.wikia.com/wiki/Winston_Churchill</rdfs:reference>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Adolf_Hitler"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Aldo_Raine"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Amos_Dreyfus"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Andy_Kagan"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Archie_Hicox"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Bob_Dreyfus"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Bridget_von_Hammersmark"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Butz"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Charlotte_LaPadite"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Dieter_Hellstrom"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Donny_Donowitz"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Eric"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Francesca_Mondino"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Frederick_Zoller"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Gerold_Hirschberg"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Hans_Landa"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Herman_Göring"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Hugo_Stiglitz"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Jakob_Dreyfus"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Joseph_Goebbels"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Julie_LaPadite"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Marcel"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Martin_Bormann"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Mathilda"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Michael_Zimmerman"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Miriam_Dreyfus"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Omar_Ulmer"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Perrier_LaPadite"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Shosanna_Dreyfus"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Simon_Sakowitz"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Smithson_Utivich"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Suzanne_LaPadite"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Werner_Rachtman"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Wilhelm"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Wilhelm_Wicki"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Winston_Churchill"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Allegiance"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Character_Type"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Allegiance"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Character_Type"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Title"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Allegiance"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Characters"/>
+            <rdf:Description rdf:about="http://www.basterds.com/ontologies/basterds.owl/Nationality"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
