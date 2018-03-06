@@ -54,25 +54,33 @@
 
     <!-- http://www.basterds.com/ontologies/basterds.owl/has_title -->
 
-    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/has_title"/>
+    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/has_title">
+        <rdfs:isDefinedBy>&quot;Character&quot; has the title (ie. first lieutenant)</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.basterds.com/ontologies/basterds.owl/is_aligned_with -->
 
-    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with"/>
+    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_aligned_with">
+        <rdfs:isDefinedBy>&quot;Character&quot; is aligned with group (ie. the Basterds)</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.basterds.com/ontologies/basterds.owl/is_character_type -->
 
-    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_character_type"/>
+    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_character_type">
+        <rdfs:isDefinedBy>&quot;Character&quot; is the character type, either main or secondary</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.basterds.com/ontologies/basterds.owl/is_from -->
 
-    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_from"/>
+    <owl:ObjectProperty rdf:about="http://www.basterds.com/ontologies/basterds.owl/is_from">
+        <rdfs:isDefinedBy>&quot;Character&quot; is from country (ie. America)</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
     
 
 
